@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <!--
+            Tout d'abour pour pouvoir utiliser nos classes bootstrap, nous allons devoir utiliser le cdn bootstrap pour pouvoir le charger et ainsi nous allons pouvoir utiliser les classes bootstrap!
+        -->
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
+       <!--
+         Si j'ai envie d'utiliser mes propres classes css, je peux preciser mon propre fichier css ici
+       -->
+       <link rel="stylesheet" href="style/style.css"/>
+
+    <body>
+        <!--
+            Parfois (meme trés souvent), nous allons vouloir mettre beaucoup de contenu dans nos pages. Si moi j'ai une dizaine de balises que je veux mettre cote a cote en display flex mais que chaque balise aura une larguer de 25% (col-4), mes balises pourront pas tous rentrer sur la ligne comme il le faut! Naturellement, les balises vont se mettre cote a cote mais vu que 10 balises chacune avec un col-4 prendra beaucoup plus que 100% de la page, nous allons largement depasser la page. Et nous n'allons pas pouvoir voir toutes nos balises 
+        -->
+        <h2> Example 1</h2>
+        <div class="d-flex">
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            <div class="col-4 bg-warning border border-dark"> Je n'aurai pas le rendu attendu</div>
+            
+        </div>
+        <br/>
+        <!--
+            Je fais la meme chose q'avant sauf que maintenant je vais appliquer la classe flex-wrap pour preciser que je vais revenir a la ligne lors que la largeur entiere de la page est prise
+        -->
+        <h2> Example 2</h2>
+        <div class="d-flex flex-wrap">
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+            <div class="col-4 bg-primary border border-dark"> Grace au flex-wrap, j'aurai le rendu attendu</div>
+        </div>
+
+
+       
+
+    </body>
+</html>

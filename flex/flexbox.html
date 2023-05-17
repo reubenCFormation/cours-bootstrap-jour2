@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <!--
+            Tout d'abour pour pouvoir utiliser nos classes bootstrap, nous allons devoir utiliser le cdn bootstrap pour pouvoir le charger et ainsi nous allons pouvoir utiliser les classes bootstrap!
+        -->
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
+       <!--
+         Si j'ai envie d'utiliser mes propres classes css, je peux preciser mon propre fichier css ici
+       -->
+       <link rel="stylesheet" href="style/style.css"/>
+
+    <body>
+       <!--
+         Bootstrap a ses propres classes pour pouvoir gerer le flexbox plus facilement! Ils nous fourni ses propres classes pour toutes les situations envisagable avec flexbox
+       -->
+       <h2> Example 1</h2>
+       <div class="col d-flex justify-content-between">
+         <div class="bg-primary border border-secondary col-3">
+            Je vais prendre le maxiumum d'espace que je peux entre ma balise voisine grace au justify-content-between
+         </div>
+
+         <div class="bg-primary border border-secondary col-3">
+            Je vais prendre le maxiumum d'espace que je peux entre ma balise voisine grace au justify-content-between
+         </div>
+       </div>
+
+       
+       <br/>
+       <!--
+         Nous pouvons aussi appliquer le "justify-content:around" avec boostrap
+       -->
+       <h2> Example 2</h2>
+       <div class="col d-flex justify-content-around">
+        <div class="bg-primary border border-secondary col-3">
+            Ici je vais prendre un espacement egale par rapport au bord et par rapport a mon voisin
+         </div>
+
+         <div class="bg-primary border border-secondary col-3">
+           Ici je vais prendre un espacement egale par rapport au bord et par rapport a mon voisin
+         </div>
+       </div>
+     <br/>
+       <!--
+        Si nous voulons tous simplement des balises cote a cote sans aucune forme d'espacement, par defaut le justify-content sera flex-start et nous n'avons pas besoin de le preciser a bootstrap car c'est le comportement par defaut
+       -->
+       <h2> Example 3</h2>
+       <div class="col d-flex">
+        <div class="bg-primary border border-secondary col-3">
+            Ici je ne precise aucun espacement, donc par defaut le justify-content sera flex-start
+         </div>
+
+         <div class="bg-primary border border-secondary col-3">
+            Ici je ne precise aucun espacement, donc par defaut le justify-content sera flex-start
+         </div>
+       </div>
+       <br/>
+
+
+       <!--
+         Ici je veux que mes divs soit cote a cote mais que elle se place sur le coté droit de la page et non sur le coté gauche. Je vais donc devoir appliquer un justify-content:end
+       -->
+       <h2> Example 4</h2>
+       <div class="col d-flex justify-content-end">
+        <div class="bg-primary border border-secondary col-3">
+            Ici je vais me placer sur le coté droit de la page car je suis en justify-content:flex-end
+         </div>
+
+         <div class="bg-primary border border-secondary col-3">
+            Ici je vais me placer sur le coté droit de la page car je suis en justify-content:flex-end
+         </div>
+       </div>
+
+       <!--
+        Afin de ne pas etre trop repetitif,je ne vais pas faire une live demo mais je precise que si nous voulons centrer nos balises au mileau de la page (faire un justify-content:center) nous avons juste a appliquer la classe justify-content-center apres notre classe d-flex
+       -->
+
+    </body>
+</html>
