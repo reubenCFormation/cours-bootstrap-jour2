@@ -1,1 +1,1 @@
-En vous inspirant des screenshots. Essayes de reporduire au plus pres la maquette dans sont integratlié. Vous pouvez bien sur utilisez vos propres classes css mais essayez d'utiliser un maximum de classes bootstrap
+En vous inspirant des screenshots. Essayes de reporduire au plus pres la maquette dans sont integratlié. Vous pouvez bien sur utilisez vos propres classes css mais essayez d'utiliser un maximum de classes bootstrap. La maquette dois aussi etre responsif.
