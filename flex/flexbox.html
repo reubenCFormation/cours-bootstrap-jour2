@@ -18,7 +18,7 @@
          Bootstrap a ses propres classes pour pouvoir gerer le flexbox plus facilement! Ils nous fourni ses propres classes pour toutes les situations envisagable avec flexbox
        -->
        <h2> Example 1</h2>
-       <div class="col d-flex justify-content-between">
+       <div class="col-12 d-flex justify-content-between">
          <div class="bg-primary border border-secondary col-3">
             Je vais prendre le maxiumum d'espace que je peux entre ma balise voisine grace au justify-content-between
          </div>
@@ -34,7 +34,7 @@
          Nous pouvons aussi appliquer le "justify-content:around" avec boostrap
        -->
        <h2> Example 2</h2>
-       <div class="col d-flex justify-content-around">
+       <div class="col-12 d-flex justify-content-around">
         <div class="bg-primary border border-secondary col-3">
             Ici je vais prendre un espacement egale par rapport au bord et par rapport a mon voisin
          </div>
@@ -48,13 +48,13 @@
         Si nous voulons tous simplement des balises cote a cote sans aucune forme d'espacement, par defaut le justify-content sera flex-start et nous n'avons pas besoin de le preciser a bootstrap car c'est le comportement par defaut
        -->
        <h2> Example 3</h2>
-       <div class="col d-flex">
-        <div class="bg-primary border border-secondary col-3">
-            Ici je ne precise aucun espacement, donc par defaut le justify-content sera flex-start
+       <div class="col-12 d-flex">
+        <div class="bg-primary border border-secondary col-3 border border-dark">
+            Ici je ne precise aucun espacement, donc par defaut je serai en flex-direction row et justify-content start
          </div>
 
-         <div class="bg-primary border border-secondary col-3">
-            Ici je ne precise aucun espacement, donc par defaut le justify-content sera flex-start
+         <div class="bg-primary border border-secondary col-3 border border-dark">
+            Ici je ne precise aucun espacement, donc par defaut je serai en flex-direction row et justify-content start
          </div>
        </div>
        <br/>
@@ -64,12 +64,12 @@
          Ici je veux que mes divs soit cote a cote mais que elle se place sur le coté droit de la page et non sur le coté gauche. Je vais donc devoir appliquer un justify-content:end
        -->
        <h2> Example 4</h2>
-       <div class="col d-flex justify-content-end">
-        <div class="bg-primary border border-secondary col-3">
+       <div class="col-12 d-flex justify-content-end">
+        <div class="bg-primary border border-dark col-3">
             Ici je vais me placer sur le coté droit de la page car je suis en justify-content:flex-end
          </div>
 
-         <div class="bg-primary border border-secondary col-3">
+         <div class="bg-primary border border-dark col-3">
             Ici je vais me placer sur le coté droit de la page car je suis en justify-content:flex-end
          </div>
        </div>

@@ -7,11 +7,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css"/>
     </head>
        <!--
          Si j'ai envie d'utiliser mes propres classes css, je peux preciser mon propre fichier css ici
        -->
-       <link rel="stylesheet" href="style/style.css"/>
+       
 
     <body>
         <!--
@@ -21,7 +22,7 @@
             3) je precise le justify-content sur grande ecran 
             
         -->
-
+        <h2> Exemple 1</h2>
         <div class="d-block d-lg-flex justify-content-lg-around">
             <!--
                 Ici, en plus du changement de display selon la taille de mon ecran je vais aussi changer la largeur de mes balises selon la taille de mon ecran
@@ -29,6 +30,32 @@
              <div class="col-9 col-lg-3 bg-primary border border-light"> En petit ecran, je serai en display block mais en grande ecran je serai en display flex</div>
              <div class="col-9 col-lg-3 bg-primary border border-light"> En petit ecran, je serai en display block mais en grande ecran je serai en display flex</div>
              <div class="col-9 col-lg-3 bg-primary border border-light"> En petit ecran, je serai en display block mais en grande ecran je serai en display flex</div>
+        </div>
+
+        <!--
+            Je peux aussi decider de changer de flex-direction selon la taille de mon ecran ainsi que de justify-content selon la taille de mon ecran
+        -->
+        <h2> Example 2</h2>
+        <div class="d-flex flex-column flex-sm-row justify-content-sm-center justify-content-lg-start">
+            <div class="col-6 col-sm-3 bg-primary border border-dark">
+                Je suis toujours un enfant de balise en display flex mais je vais changer selon la taille de l'ecran
+            </div>
+            <div class="col-6 col-sm-3 bg-primary border border-dark">
+                Je suis toujours un enfant de balise en display flex mais je vais changer selon la taille de l'ecran
+            </div>
+            <div class="col-6 col-sm-3 bg-primary border border-dark">
+                Je suis toujours un enfant de balise en display flex mais je vais changer selon la taille de l'ecran
+            </div>
+        </div>
+
+        <!--
+            Nous pouvons aussi bien sur changer d'alignment verticale selon notre taille d'ecran. Ici dans mes breakpoints differents je change l'alignments verticalement et horizontalement avec justify-content et align-items. Cependant, nous allons toujours rester en flex-column ici donc nous allons prendre le comportement de flex-column par rapport a l'alignment
+        -->
+        <h2> Example 3</h2>
+
+        <div style="height:300px" class="d-flex flex-column justify-content-center align-items-sm-center justify-content-sm-start align-items-lg-end justify-content-lg-center border border-dark">
+            <div class="h-25 col-6 bg-primary border border-dark"> Je suis la premiere div</div>
+            <div class="h-25 col-6 bg-primary border border-dark"> Je suis la deuxieme div</div>
         </div>
 
 
